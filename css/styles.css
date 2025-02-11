@@ -26,6 +26,8 @@ body {
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -1066,6 +1068,346 @@ footer {
     color: white;
 }
 
+/* Responsive Design Improvements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Flexible Container Layouts */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive Grid and Flexbox */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.flex-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Responsive Typography */
+html {
+    font-size: 16px;
+}
+
+/* Media Queries for Different Device Sizes */
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 15px;
+    }
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 950px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 90%;
+    }
+    
+    /* Adjust specific sections */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills-section .skill-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    
+    /* Mobile-specific adjustments */
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    
+    /* Smallest device adjustments */
+    .project-card {
+        width: 100%;
+    }
+    
+    .skills-section .skill-item {
+        width: 100%;
+    }
+}
+
+/* iOS Specific Adjustments */
+@supports (-webkit-touch-callout: none) {
+    .home {
+        height: -webkit-fill-available;
+    }
+
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+}
+
+/* Ensure touch targets are large enough for mobile */
+@media (pointer: coarse) {
+    .btn, .social-icon, nav ul li a {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 10px;
+    }
+}
+
+/* Responsive Typography */
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* About Me Section Responsive Styles */
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.about-me-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.professional-journey {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.journey-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.journey-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.journey-details {
+    flex-grow: 1;
+}
+
+.journey-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.journey-details p {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 992px) {
+    .professional-journey {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .journey-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .journey-icon {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-header h2 {
+        font-size: 2rem;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+    
+    .journey-details h3 {
+        font-size: 1.2rem;
+    }
+    
+    .journey-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me-section {
+        padding: 1rem;
+    }
+    
+    .professional-journey {
+        gap: 1rem;
+    }
+    
+    .journey-item {
+        padding: 1rem;
+    }
+    
+    .journey-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive Contact Card Styles */
+@media screen and (max-width: 992px) {
+    .contact-methods-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-methods {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .contact-card {
+        max-width: 400px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-card-front h3,
+    .contact-card-back h3 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-value {
+        font-size: 0.9rem;
+    }
+    
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+    
+    .contact-action-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .contact-value {
+        font-size: 0.85rem;
+    }
+    
+    .contact-action-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
+
 /* Responsive Design Media Queries */
 @media screen and (max-width: 1200px) {
     .home {
@@ -1220,5 +1562,185 @@ html {
 @media screen and (max-width: 480px) {
     html {
         font-size: 13px;
+    }
+}
+
+/* About Me Section Responsive Styles */
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.about-me-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.professional-journey {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.journey-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.journey-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.journey-details {
+    flex-grow: 1;
+}
+
+.journey-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.journey-details p {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 992px) {
+    .professional-journey {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .journey-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .journey-icon {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-header h2 {
+        font-size: 2rem;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+    
+    .journey-details h3 {
+        font-size: 1.2rem;
+    }
+    
+    .journey-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me-section {
+        padding: 1rem;
+    }
+    
+    .professional-journey {
+        gap: 1rem;
+    }
+    
+    .journey-item {
+        padding: 1rem;
+    }
+    
+    .journey-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive Contact Card Styles */
+@media screen and (max-width: 992px) {
+    .contact-methods-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-methods {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .contact-card {
+        max-width: 400px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-card-front h3,
+    .contact-card-back h3 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-value {
+        font-size: 0.9rem;
+    }
+    
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+    
+    .contact-action-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .contact-value {
+        font-size: 0.85rem;
+    }
+    
+    .contact-action-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
     }
 }
