@@ -1,0 +1,340 @@
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+section {
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+.home-content h1 {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.social-links a {
+    animation: pulse 2s infinite;
+}
+
+.project-card {
+    transition: all 0.3s ease;
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+/* Advanced Skill Animations */
+@keyframes skillCircleWave {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    25% {
+        transform: scale(1.05) rotate(-5deg);
+        box-shadow: 0 15px 35px rgba(52, 152, 219, 0.2);
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 20px 45px rgba(52, 152, 219, 0.3);
+    }
+    75% {
+        transform: scale(1.05) rotate(-3deg);
+        box-shadow: 0 15px 35px rgba(52, 152, 219, 0.2);
+    }
+}
+
+@keyframes skillIconPulse {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.3) rotate(15deg);
+    }
+}
+
+@keyframes skillPathAnimation {
+    0% {
+        stroke-dashoffset: 100;
+        stroke: rgba(52, 152, 219, 0.2);
+    }
+    50% {
+        stroke: rgba(52, 152, 219, 0.6);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: var(--primary-color);
+    }
+}
+
+@keyframes skillLabelFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Skill Circle Animations */
+.skill-circle {
+    animation: skillCircleWave 3s infinite ease-in-out;
+    animation-play-state: paused;
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.skill-circle:hover {
+    animation-play-state: running;
+}
+
+.skill-circle-inner i {
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.skill-circle:hover .skill-circle-inner i {
+    animation: skillIconPulse 0.5s ease-in-out;
+}
+
+.skill-circle-path {
+    animation: skillPathAnimation 2s ease-in-out forwards;
+}
+
+.skill-label {
+    transition: all 0.4s ease;
+}
+
+.skill-circle:hover .skill-label {
+    animation: skillLabelFloat 1s ease-in-out;
+    color: var(--primary-color);
+}
+
+/* Background Particle Animation */
+@keyframes particleFlow {
+    0% {
+        transform: rotate(-15deg) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: rotate(-10deg) scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(-15deg) scale(1);
+        opacity: 0.3;
+    }
+}
+
+.skills-container::before {
+    animation: particleFlow 5s infinite ease-in-out;
+}
+
+/* Futuristic Skill Animations */
+@keyframes techPulse {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+        filter: hue-rotate(0deg) brightness(100%);
+    }
+    25% {
+        transform: scale(1.05) rotate(-3deg);
+        filter: hue-rotate(45deg) brightness(110%);
+    }
+    50% {
+        transform: scale(1.1) rotate(3deg);
+        filter: hue-rotate(90deg) brightness(120%);
+    }
+    75% {
+        transform: scale(1.05) rotate(-2deg);
+        filter: hue-rotate(135deg) brightness(110%);
+    }
+}
+
+@keyframes glitchEffect {
+    0%, 100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    10% {
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    }
+    20% {
+        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+    }
+    30% {
+        clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+    }
+}
+
+@keyframes circuitFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes dataStream {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Skill Interaction Animations */
+.skill-circuit {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-circuit::before,
+.skill-circuit::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg, 
+        transparent 0%, 
+        rgba(52, 152, 219, 0.2) 50%, 
+        transparent 100%
+    );
+    animation: circuitFlow 5s linear infinite;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.skill-circuit::after {
+    background: linear-gradient(
+        135deg, 
+        transparent 0%, 
+        rgba(46, 204, 113, 0.2) 50%, 
+        transparent 100%
+    );
+    animation-delay: 2.5s;
+}
+
+.skill-glitch {
+    animation: glitchEffect 2s infinite;
+}
+
+.skill-pulse {
+    animation: techPulse 3s infinite;
+}
+
+/* Advanced Hover Interactions */
+.skill-interactive {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skill-interactive:hover {
+    transform: scale(1.1) rotate(3deg);
+    filter: brightness(120%) hue-rotate(45deg);
+}
+
+/* Cyberpunk Data Stream Effect */
+.skill-data-stream {
+    background: linear-gradient(
+        45deg, 
+        rgba(52, 152, 219, 0.1), 
+        rgba(46, 204, 113, 0.1)
+    );
+    background-size: 400% 400%;
+    animation: dataStream 10s ease infinite;
+}
+
+/* Performance Optimization for Mobile Devices */
+@media screen and (max-width: 768px) {
+    section {
+        animation: none;
+        opacity: 1;
+    }
+
+    .home-content h1 {
+        animation: none;
+        opacity: 1;
+    }
+
+    .social-links a {
+        animation: none;
+    }
+
+    .skill-circle {
+        animation: none;
+    }
+
+    .skill-circle:hover {
+        transform: scale(1.02);
+    }
+}
+
+/* Reduce Complexity of Animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .btn::before {
+        display: none;
+    }
+}
