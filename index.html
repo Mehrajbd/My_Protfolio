@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Mehraj's professional portfolio showcasing skills and projects">
+    <title>Portfolio</title>
+    
+    <!-- Multiple Font Awesome Loading Methods -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+       
+    </div>
+
+    <nav>
+        <div class="logo">Mahmudur Rashid Mehraj</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="home">
+            <div class="home-content">
+                <div class="hero-text">
+                    <h1 class="typing-effect">Hi, I'm <span class="name-highlight">Mahmudur Rashid Mehraj</span></h1>
+                    <p class="subtitle">A Creative <span class="typed-text"></span></p>
+                </div>
+              
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-handshake"></i> Hire Me
+                    </a>
+                    <a href="./assets/cv/Front-end _Mahmudur Rashid .pdf" target="_blank" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#portfolio" class="btn btn-tertiary">
+                        <i class="fas fa-project-diagram"></i> View Projects
+                    </a>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-border"></div>
+                    <img src="./images/M2.png" alt="Your Profile">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-me-section container">
+                <div class="about-me-header">
+                    <h2>About <span class="highlight">Me</span></h2>
+                    <p class="intro-text">I'm a dedicated QA Engineer with expertise in both Manual Testing and Automation using Selenium and 
+                        Python. Passionate about delivering high-quality, reliable software, I excel at identifying bugs, ensuring 
+                        performance, and crafting efficient test cases. I thrive in dynamic environments, leveraging analytical skills 
+                        and problem-solving to drive seamless user experiences. Eager to learn, grow, and contribute to team 
+                        success while continuously enhancing my expertise in development and quality assurance.</p>
+                </div>
+                
+                <div class="professional-journey flex-responsive">
+                    <div class="journey-item">
+                        <div class="journey-icon">🚀</div>
+                        <div class="journey-details">
+                            <h3>Professional Mission</h3>
+                            <p>Transform complex challenges into elegant, user-centric solutions through cutting-edge web technologies.</p>
+                        </div>
+                    </div>
+                    <div class="journey-item">
+                        <div class="journey-icon">💡</div>
+                        <div class="journey-details">
+                            <h3>Core Philosophy</h3>
+                            <p>Blend design thinking with robust development to create meaningful digital experiences that make a difference.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Tech <span class="highlight">Arsenal</span></h3>
+                    <div class="skills-container">
+                        <div class="skills-dynamic-grid">
+                            <div class="skill-quantum" data-skill="HTML5" data-proficiency="90">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">HTML5</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="CSS3" data-proficiency="85">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">CSS3</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                                    <div class="skill-quantum" data-skill="TailwindCSS" data-proficiency="80">
+    <div class="skill-quantum-icon">
+        <!-- TailwindCSS SVG logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40">
+            <path fill="#38bdf8" d="M24 9c-6.627 0-10.77 3.313-12.432 9.938 2.486-3.312 5.412-4.562 8.777-3.75 1.906.475 3.27 1.862 4.774 3.407 2.457 2.5 5.3 5.391 11.381 5.391 6.628 0 10.771-3.313 12.433-9.938-2.487 3.312-5.412 4.562-8.778 3.75-1.905-.475-3.27-1.862-4.774-3.407C32.923 11.89 30.08 9 24 9zm-12.432 12c-6.628 0-10.771 3.312-12.433 9.938 2.487-3.313 5.413-4.563 8.778-3.75 1.905.475 3.27 1.862 4.774 3.407 2.457 2.5 5.3 5.391 11.381 5.391 6.628 0 10.771-3.312 12.433-9.938-2.487 3.313-5.412 4.563-8.778 3.75-1.905-.475-3.27-1.862-4.774-3.407C20.923 23.89 18.08 21 12 21z"/>
+        </svg>
+    </div>
+    <div class="skill-quantum-details">
+        <h3 class="skill-quantum-name">TailwindCSS</h3>
+        <div class="skill-quantum-wave"></div>
+    </div>
+</div>
+
+                            <div class="skill-quantum" data-skill="JavaScript" data-proficiency="80">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">JavaScript</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="React" data-proficiency="75">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">React</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="Node.js" data-proficiency="70">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">Node.js</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="React Native" data-proficiency="75">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">React Native</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="Flutter" data-proficiency="70">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-flutter"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">Flutter</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="Dart" data-proficiency="65">
+                                <div class="skill-quantum-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">Dart</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="Python" data-proficiency="80">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">Python</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="Selenium" data-proficiency="75">
+                                <div class="skill-quantum-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">Selenium</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="PHP" data-proficiency="70">
+                                <div class="skill-quantum-icon">
+                                    <i class="fab fa-php"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">PHP</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                            <div class="skill-quantum" data-skill="Next.js" data-proficiency="75">
+                                <div class="skill-quantum-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-quantum-details">
+                                    <h3 class="skill-quantum-name">Next.js</h3>
+                                    <div class="skill-quantum-wave"></div>
+                                </div>
+                            </div>
+                                    <div class="skill-quantum" data-skill="Python" data-proficiency="80">
+                                        <div class="skill-quantum-icon">
+                                            <i class="fab fa-python"></i>
+                                        </div>
+                                        <div class="skill-quantum-details">
+                                            <h3 class="skill-quantum-name">Machine Learning</h3>
+                                            <div class="skill-quantum-wave"></div>
+                                        </div>
+                                        
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio-header">
+                <h2>My <span class="highlight">Projects</span></h2>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="design">Tested Project</button>
+                    <button class="filter-btn" data-filter="coding">Machine Learning and Deep Learning</button>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="./images/eccom.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with advanced features</p>
+                        <div class="project-links">
+                            <a href="https://mehrajbd.github.io/ecomm" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                   
+
+
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image-wrapper">
+                        <img src="./images/Project1.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Agiledot LLC</h3>
+                        <p></p>
+                        <div class="project-links">
+                            <a href="https://mehrajbd.github.io/agile" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image-wrapper">
+                        <img src="images/project2.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Cross-platform productivity application</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image-wrapper">
+                        <img src="./images/tested1.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span>Tested Project</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>QA Automation</h3>
+                        <p>Ensured Quality through Automation</p>
+                        <div class="project-links">
+                            <a href="https://elturista.xyz/" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+ <div class="project-card" data-category="design">
+                    <div class="project-image-wrapper">
+                        <img src="./images/bookme.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span>Tested Project</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>bookme</h3>
+                        <p>Ensured Quality through Automation</p>
+                        <div class="project-links">
+                            <a href="https://bookme.com.bd" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image-wrapper">
+                        <img src="./images/tested2.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span>Tested Project</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>QA Automation</h3>
+                        <p>Ensured Quality through Automation</p>
+                        <div class="project-links">
+                            <a href="https://ediann.xyz/service/ediann" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+  <div class="project-card" data-category="coding">
+                    <div class="project-image-wrapper">
+                        <img src="./images/Fake_News.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                     <span>Automated-Fake-News-Detection-Using-NLP-and-Transformers-BERT-to-Detect-Misinformation</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NLP</h3>
+                        <p>Ensure that the news is fake or real.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Mehrajbd/Automated-Fake-News-Detection-Using-NLP-and-Transformers-BERT-to-Detect-Misinformation-.git" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                      <div class="project-card" data-category="coding">
+                    <div class="project-image-wrapper">
+                        <img src="./images/Human.png" alt="Project 4">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span>Human Action Recognition in Library Environment Using CNN-RNN model</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CNN-RNN</h3>
+                        <p>Recognizing the action at Library Environment</p>
+                        <div class="project-links">
+                            <a href="https://ediann.xyz/service/ediann" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                      <div class="project-card" data-category="coding">
+                    <div class="project-image-wrapper">
+                        <img src="./images/Examining Bangladeshi Taka for Authenticity.png" alt="Project 5">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span> A COUNTERFEIT DETECTION OF BANGLADESHI CURRENCY THROUGH CNN AND ENSEMBLE LEARNING</span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CNN AND ENSEMBLE LEARNING</h3>
+                        <p>Detect that the Currency (BDT) is Real or Fake</p>
+                        <div class="project-links">
+                            <a href="https://ediann.xyz/service/ediann" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+            
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <h2>Let's <span class="highlight">Connect</span></h2>
+                        <p class="contact-description">
+                            Have a project in mind or just want to say hello? 
+                            I'm all ears and ready to bring your ideas to life.
+                        </p>
+                        <div class="contact-methods-container">
+                            <div class="contact-methods">
+                                <div class="contact-card contact-card-email">
+                                    <div class="contact-card-inner">
+                                        <div class="contact-card-front">
+                                            <div class="contact-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <h3>Email</h3>
+                                            <p class="contact-value">mr.mehraj1010@gmail.com</p>
+                                        </div>
+                                        <div class="contact-card-back">
+                                            <div class="contact-actions">
+                                                <button class="contact-action-btn copy-btn" data-copy="mr.mehraj1010@gmail.com">
+                                                    <i class="fas fa-copy"></i>
+                                                    <span>Copy</span>
+                                                </button>
+                                                <a href="mailto:mr.mehraj1010@gmail.com" class="contact-action-btn">
+                                                    <i class="fas fa-paper-plane"></i>
+                                                    <span>Send</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-card contact-card-phone">
+                                    <div class="contact-card-inner">
+                                        <div class="contact-card-front">
+                                            <div class="contact-icon">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </div>
+                                            <h3>Phone</h3>
+                                            <p class="contact-value">+880 1831-674910</p>
+                                        </div>
+                                        <div class="contact-card-back">
+                                            <div class="contact-actions">
+                                                <button class="contact-action-btn copy-btn" data-copy="+880 1831-674910">
+                                                    <i class="fas fa-copy"></i>
+                                                    <span>Copy</span>
+                                                </button>
+                                                <a href="tel:+8801831674910" class="contact-action-btn">
+                                                    <i class="fas fa-phone"></i>
+                                                    <span>Call</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-connect">
+                            <h3>Find Me Online</h3>
+                            <div class="social-links">
+                                <a href="http://www.linkedin.com/in/mahmudurrashidmehraj" class="social-icon linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/Mehrajbd" class="social-icon github">
+                                    <i class="fab fa-github"></i>
+                                  
+                                    
+                                </a>
+                                <a href="https://www.facebook.com/share/1EFDYfVGGq" class="social-icon facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon instagram">
+                                    <i class="fab fa-instagram"></i>
+                                  
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fas fa-comment"></i>
+                                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-submit">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-background-shape"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mahmudur Rashid Mehraj. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</body>
+</html>
